@@ -1,6 +1,6 @@
 import { createElement, useEffect, useMemo } from "react";
 
-import { CascaderContainerProps } from "../typings/CascaderProps";
+import { DojoListenerContainerProps } from "../typings/DojoListenerProps";
 
 import "./ui/index.scss";
 
@@ -23,7 +23,7 @@ const parseStyle = (style = ""): { [key: string]: string } => {
     }
 };
 
-export default function Cascader(props: CascaderContainerProps) {
+export default function DojoListener(props: DojoListenerContainerProps) {
     const store = useMemo(() => new Store(props), []);
 
     useEffect(() => {

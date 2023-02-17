@@ -1,5 +1,5 @@
 /**
- * This file was generated from Cascader.xml
+ * This file was generated from DojoListener.xml
  * WARNING: All changes made to this file will be overwritten
  * @author Mendix Widgets Team
  */
@@ -23,9 +23,9 @@ interface _W {
     myString: string;
 }
 
-export interface CascaderContainerProps extends CommonProps, _W {}
+export interface DojoListenerContainerProps extends CommonProps, _W {}
 
-export interface CascaderPreviewProps extends _W {
+export interface DojoListenerPreviewProps extends _W {
     class: string;
     style: string;
     styleObject: CSSProperties;
