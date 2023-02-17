@@ -1,7 +1,7 @@
 {
   "name": "dojolistener",
   "widgetName": "DojoListener",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Template repo for legacy custome wiget",
   "copyright": "2021 Mendix",
   "author": "Liu Wengao <wengao.liu@siemens.com>",
@@ -45,6 +45,7 @@
     "@types/enzyme-adapter-react-16": "^1.0.2",
     "@types/jasmine": "^3.4.0",
     "@types/jest": "^24.0.0",
+    "@types/lodash": "^4.14.191",
     "@types/react": "^16.8.17",
     "@types/react-dom": "^16.8.4",
     "@types/react-resize-detector": "^4.2.0",
@@ -68,6 +69,7 @@
     "big.js": "^5.2.2",
     "classnames": "^2.2.6",
     "mobx": "^6.3.10",
+    "lodash": "^4.17.21",
     "mobx-react": "^7.2.1"
   }
 }

@@ -20,7 +20,9 @@ interface CommonProps {
 }
 
 interface _W {
-    myString: string;
+    nf: INanoflow;
+    event: string;
+    mapping: [{ mapKey: string; bindAtt: string }];
 }
 
 export interface DojoListenerContainerProps extends CommonProps, _W {}
