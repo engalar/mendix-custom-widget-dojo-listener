@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget id="com.mendix.widget.custom.DojoListener.DojoListener" needsEntityContext="false" offlineCapable="true" supportedPlatform="Web"
+<widget id="com.mendix.widget.custom.DojoListener.DojoListener" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web"
     xmlns="http://www.mendix.com/widget/1.0/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>DojoListener</name>
@@ -7,9 +7,30 @@
     <icon></icon>
     <properties>
         <propertyGroup caption="通用">
-            <property key="myString" type="string" required="false" multiline="false">
-                <caption>String</caption>
+            <property key="mapping" type="object" isList="true">
+                <caption>参数映射</caption>
                 <description></description>
+                <properties>
+                    <propertyGroup caption="通用">
+                        <property key="mapKey" type="string" required="true" defaultValue="someKey" multiline="false">
+                            <caption>来源Key</caption>
+                            <description></description>
+                        </property>
+                        <property key="bindAtt" type="attribute" required="true" isPath="no">
+                            <caption>目标属性</caption>
+                            <description></description>
+                            <attributeTypes>
+                                <attributeType name="String" />
+                                <attributeType name="Integer" />
+                            </attributeTypes>
+                        </property>
+                    </propertyGroup>
+                </properties>
+            </property>
+            <property key="nf" type="nanoflow" required="true">
+                <caption>事件处理逻辑</caption>
+                <description></description>
+                <returnType type="Void" />
             </property>
         </propertyGroup>
     </properties>
